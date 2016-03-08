@@ -5,6 +5,8 @@ var $h2 = $('h2');
 var $img = $('img');
 var $dl = $('dl');
 var $dt = $('dt');
+var $firstP = $('main p:first-child');
+var $mainUl = $('main ul');
 
 $header.addClass('masthead');
 
@@ -12,16 +14,20 @@ $h1.removeClass('bigheading').addClass('logo');
 
 $main.addClass('wrapper');
 
-//#4 here
+$firstP.addClass('intro');
 
 $h2.addClass('slug-head');
 
-//#6
+$mainUl.addClass('slug-list');
 
 $img.addClass('slug-img');
 
-//#8, #9
+$('ul li:first-child').addClass('slug-list-first');
+
+$('ul li:last-child').addClass('slug-list-last');
 
 $dl.addClass('classification');
 
 $dt.removeClass('big-label');
+
+$('ul li:last-child').show();
